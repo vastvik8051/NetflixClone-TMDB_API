@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone Vastvik</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="NetflixStyle.css" />
+
+    <!-- JS -->
+    <script src="Netflix.js" defer></script>
+</head>
+
+<body>
+    <div id="vpn-popup" class="vpn-popup-overlay">
+    <div class="vpn-popup-box">
+        <h2>VPN Required</h2>
+        <p>This site fetches movie data from an API that may be restricted on some networks. Please turn on a VPN for the best experience.</p>
+        <button id="vpn-popup-close">Got it</button>
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+    <nav class="navbar">
+        <div class="container">
+
+            <!-- Netflix Logo -->
+            <div class="nav-logo"></div>
+
+            <!-- Left Nav Links -->
+            <div class="nav-left">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">TV Series</a>
+                <a href="#" class="nav-link">Movies</a>
+                <a href="#" class="nav-link">New & Popular</a>
+                <a href="#" class="nav-link">My List</a>
+                <a href="#" class="nav-link">Browse by Language</a>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="nav-right">
+                <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="nav-notif"><i class="fa-solid fa-bell"></i></div>
+                <div class="nav-profile"></div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<!-- ================= BANNER SECTION ================= -->
+<div class="banner-section" id="banner-section"></div>
+
+<!-- ================= MOVIES SECTION ================= -->
+<div class="movies-cont content-container" id="movies-cont"></div>
+
+</body>
+</html>
